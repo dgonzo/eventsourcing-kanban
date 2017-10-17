@@ -1,0 +1,6 @@
+Faker==0.7.1
+hypothesis>=3.19.2
+pytest>=3.2.2
+py>=1.4.34
+pytest-cov>=2.5.1
+coverage>=3.7.1
