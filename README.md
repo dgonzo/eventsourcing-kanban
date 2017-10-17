@@ -1,6 +1,10 @@
 # Event Sourcing Kanban Example
 
 # Serialization Error when using TimestampedVersionedEntity
+See:
+ * [TimestamedVersionedEntity Class](kanban/domain/model/ts_user.py)
+ * [Repository Configuration](infrastructure/ts_unit_of_work.py)
+ * [Policies](infrastructure/projections/kanban_domain_policies.py)
 
 ```python
 from infrastructure.ts_unit_of_work import UnitOfWork
@@ -57,6 +61,10 @@ TypeError: Object of type 'set' is not JSON serializable
 ```
 
 # EntityNotFoundError (corrupted repository) when using WithReflexiveMutator
+See:
+* [WithReflexiveMutator Class](kanban/domain/model/ref_user.py)
+* [Repository Configuration](infrastructure/unit_of_work.py)
+* [Policies](infrastructure/projections/workflow_platform_domain_policies.py)
 ```python
 from infrastructure.unit_of_work import UnitOfWork
 from infrastructure.datastore import get_session
