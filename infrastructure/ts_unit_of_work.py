@@ -3,6 +3,7 @@ from eventsourcing.infrastructure.eventsourcedrepository import EventSourcedRepo
 from eventsourcing.infrastructure.snapshotting import EventSourcedSnapshotStrategy
 from eventsourcing.infrastructure.sqlalchemy.activerecords import SQLAlchemyActiveRecordStrategy, \
     IntegerSequencedItemRecord, SnapshotRecord
+from eventsourcing.infrastructure.transcoding import ObjectJSONEncoder, ObjectJSONDecoder
 
 from infrastructure.datastore import get_session
 from infrastructure.projections.kanban_domain_policies import KanbanSnapshottingPolicy
@@ -61,3 +62,30 @@ class UnitOfWork(ApplicationWithPersistencePolicies):
         user.name = name
         user.save()
         return user
+
+
+    def construct_sequenced_item_mapper(self, *args, **kwargs):
+        kwargs['json_encoder_class'] = CustomObjectJSONEncoder
+        kwargs['json_decoder_class'] = CustomObjectJSONDecoder
+        return super(UnitOfWork, self).construct_sequenced_item_mapper(*args, **kwargs)
+
+
+class CustomObjectJSONEncoder(ObjectJSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, set):
+            return {'set': list(obj)}
+        else:
+            return super(CustomObjectJSONEncoder, self).default(obj)
+
+
+class CustomObjectJSONDecoder(ObjectJSONDecoder):
+    @classmethod
+    def from_jsonable(cls, d):
+        if 'set' in d:
+            return cls._decode_set(d)
+        else:
+            return ObjectJSONDecoder.from_jsonable(d)
+
+    @staticmethod
+    def _decode_set(d):
+        return set(d['set'])
