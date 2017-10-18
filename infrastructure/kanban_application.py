@@ -28,7 +28,8 @@ class KanbanApplication(ApplicationWithPersistencePolicies):
         assert self.entity_event_store is not None
         self.user_repository = UserRepository(
             event_store=self.entity_event_store,
-            snapshot_strategy=self.snapshot_strategy
+            snapshot_strategy=self.snapshot_strategy,
+
         )
 
     @staticmethod
