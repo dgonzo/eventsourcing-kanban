@@ -1,6 +1,6 @@
 from eventsourcing.domain.model.events import subscribe, unsubscribe
 
-from kanban.domain.model.ts_user import User
+from kanban.domain.model.user import User
 
 
 class KanbanSnapshottingPolicy(object):

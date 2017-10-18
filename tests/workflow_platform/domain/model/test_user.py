@@ -3,7 +3,7 @@ from hypothesis.extra.fakefactory import fake_factory
 from hypothesis.strategies import sampled_from
 from pytest import raises
 
-from kanban.domain.model.ref_user import User
+from kanban.domain.model.user import User
 
 PASSWORDS = [
     '$pbkdf2-sha512$200000$rrU25pxTSsn5n5NyjvH.Pw$PKLSamXKl5S/guVvYVAodJr3tcCGkvEdRt0OtnZizsuGrWowhqVxzumih13hfnssE2jbJONXaAYXcm0ZZTa/dw',

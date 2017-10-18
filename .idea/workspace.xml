@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fb0bdb-ee60-4daa-a78a-49ad43165dc1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/gonzo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/kanban_repositories.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/projections/workflow_platform_domain_policies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/ts_unit_of_work.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/unit_of_work.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kanban/domain/model/ts_user.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/infrastructure/test_by_john_from_readme_file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/infrastructure/test_unit_of_work.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ts_user.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kanban/domain/model/ref_user.py" afterPath="$PROJECT_DIR$/kanban/domain/model/user.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ref_user.py" afterPath="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_user.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/datastore.py" afterPath="$PROJECT_DIR$/infrastructure/datastore.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py" afterPath="$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapi/routes/user_routes.py" afterPath="$PROJECT_DIR$/webapi/routes/user_routes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +32,8 @@
     <SUITE FILE_PATH="coverage/eventsourcing_kanban$py_test_for_test_user_test_discard_user_domain.coverage" NAME="py.test for test_user.test_discard_user_domain Coverage Results" MODIFIED="1508182523528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/workflow_platform/domain/model" />
     <SUITE FILE_PATH="coverage/eventsourcing_kanban$py_test_for_test_user_test_add_invalid_domain_to_user_raises_attribute_error.coverage" NAME="py.test for test_user.test_add_invalid_domain_to_user_raises_attribute_error Coverage Results" MODIFIED="1508182537708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/workflow_platform/domain/model" />
     <SUITE FILE_PATH="coverage/eventsourcing_kanban$test_ts_user.coverage" NAME="test_ts_user Coverage Results" MODIFIED="1508228676580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/workflow_platform/domain/model" />
-    <SUITE FILE_PATH="coverage/eventsourcing_kanban$py_test_in_test_user_py.coverage" NAME="py.test in test_user.py Coverage Results" MODIFIED="1508182564881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/workflow_platform/domain/model" />
+    <SUITE FILE_PATH="coverage/eventsourcing_kanban$py_test_for_test_app_test_new_user.coverage" NAME="py.test for test_app.test_new_user Coverage Results" MODIFIED="1508276896773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/eventsourcing_kanban$py_test_in_test_user_py.coverage" NAME="py.test in test_user.py Coverage Results" MODIFIED="1508290027318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/workflow_platform/domain/model" />
     <SUITE FILE_PATH="coverage/eventsourcing_kanban$py_test_for_test_unit_of_work_test_remove_domain_from_user.coverage" NAME="py.test for test_unit_of_work.test_remove_domain_from_user Coverage Results" MODIFIED="1508182602520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/infrastructure" />
   </component>
   <component name="DatabaseView">
@@ -43,38 +58,60 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="kanban_domain_policies.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="245">
+              <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
-                <element signature="e#0#68#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unit_of_work.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/unit_of_work.py">
+      <file leaf-file-name="datastore.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/datastore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="189" column="12" lean-forward="false" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kanban_application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/kanban_application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-395">
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kanban_repositories.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/kanban_repositories.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="880">
-                <caret line="66" column="75" lean-forward="false" selection-start-line="66" selection-start-column="75" selection-end-line="66" selection-end-column="75" />
-                <folding>
-                  <marker date="1508232643251" expanded="true" signature="593:4465" ph="..." />
-                </folding>
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
               </first_editor>
               <second_editor />
             </state>
@@ -94,6 +131,7 @@
     <findStrings>
       <find>ziff</find>
       <find>ziff.ai</find>
+      <find>db.</find>
     </findStrings>
     <replaceStrings>
       <replace>example.com</replace>
@@ -107,21 +145,28 @@
       <list>
         <option value="$PROJECT_DIR$/infrastructure/projections/workflow_platform_domain_policies.py" />
         <option value="$PROJECT_DIR$/utility/fixtures.py" />
-        <option value="$PROJECT_DIR$/utility/parse.py" />
         <option value="$PROJECT_DIR$/tests/infrastructure/test_unit_of_work.py" />
-        <option value="$PROJECT_DIR$/webapi/routes/user_routes.py" />
         <option value="$PROJECT_DIR$/webapi/models/user_model.py" />
         <option value="$PROJECT_DIR$/kanban/domain/model/user.py" />
         <option value="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_user.py" />
-        <option value="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ts_user.py" />
         <option value="$PROJECT_DIR$/infrastructure/projections/ts_unit_of_work.py" />
-        <option value="$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py" />
-        <option value="$PROJECT_DIR$/infrastructure/datastore.py" />
-        <option value="$PROJECT_DIR$/infrastructure/ts_unit_of_work.py" />
         <option value="$PROJECT_DIR$/kanban/domain/model/ts_user.py" />
-        <option value="$PROJECT_DIR$/infrastructure/unit_of_work.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/infrastructure/application.py" />
+        <option value="$PROJECT_DIR$/infrastructure/unit_of_work.py" />
+        <option value="$PROJECT_DIR$/infrastructure/ts_unit_of_work.py" />
+        <option value="$PROJECT_DIR$/infrastructure/ka_uow.py" />
+        <option value="$PROJECT_DIR$/tests/test_app.py" />
+        <option value="$PROJECT_DIR$/webapi/exceptions.py" />
+        <option value="$PROJECT_DIR$/infrastructure/kanban_application.py" />
+        <option value="$PROJECT_DIR$/utility/parse.py" />
+        <option value="$PROJECT_DIR$/webapi/routes/user_routes.py" />
+        <option value="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ts_user.py" />
+        <option value="$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py" />
+        <option value="$PROJECT_DIR$/infrastructure/kanban_repositories.py" />
+        <option value="$PROJECT_DIR$/infrastructure/datastore.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -132,10 +177,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="640" />
+    <option name="x" value="840" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="1058" />
+    <option name="width" value="840" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -245,7 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,12 +335,6 @@
               <item name="eventsourcing-kanban" type="b2602c69:ProjectViewProjectNode" />
               <item name="eventsourcing-kanban" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="infrastructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventsourcing-kanban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventsourcing-kanban" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="workflow_platform" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,11 +357,24 @@
               <item name="eventsourcing-kanban" type="462c0819:PsiDirectoryNode" />
               <item name="webapi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="eventsourcing-kanban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eventsourcing-kanban" type="462c0819:PsiDirectoryNode" />
+              <item name="webapi" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventsourcing-kanban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eventsourcing-kanban" type="462c0819:PsiDirectoryNode" />
+              <item name="webapi" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,7 +396,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_ts_user">
+  <component name="RunManager">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -393,6 +444,22 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="py.test for test_app.test_new_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="workflow-platform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_app.test_new_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="py.test for test_unit_of_work.test_add_domain_to_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -425,7 +492,7 @@
       <option name="_new_target" value="&quot;test_unit_of_work.test_remove_domain_from_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.workflow_platform.domain.model.test_ref_user.test_add_invalid_domain_to_user_raises_attribute_error" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_user.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -438,23 +505,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.workflow_platform.domain.model.test_ref_user.test_add_invalid_domain_to_user_raises_attribute_error&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test in test_ref_user.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/workflow_platform/domain/model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="workflow-platform" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ref_user.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/workflow_platform/domain/model/test_user.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="test_ts_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -476,19 +527,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_ref_user.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.workflow_platform.domain.model.test_ref_user.test_add_invalid_domain_to_user_raises_attribute_error" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_remove_domain_from_user" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_add_domain_to_user" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_ts_user" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_user.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_remove_domain_from_user" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_add_domain_to_user" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_ts_user" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_app.test_new_user" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_ts_user" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_add_domain_to_user" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_remove_domain_from_user" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_ref_user.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.workflow_platform.domain.model.test_ref_user.test_add_invalid_domain_to_user_raises_attribute_error" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_user.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_app.test_new_user" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_ts_user" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_add_domain_to_user" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_unit_of_work.test_remove_domain_from_user" />
       </list>
     </recent_temporary>
   </component>
@@ -509,79 +560,63 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_unit_of_work_test_add_domain_to_user - 2017.10.16 at 13h 37m 04s.xml">
-      <configuration name="py.test for test_unit_of_work.test_add_domain_to_user" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 04m 18s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_unit_of_work_test_remove_domain_from_user - 2017.10.16 at 13h 36m 50s.xml">
-      <configuration name="py.test for test_unit_of_work.test_remove_domain_from_user" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 07m 35s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_add_invalid_domain_to_user_raises_attribute_error - 2017.10.16 at 13h 35m 46s.xml">
-      <configuration name="py.test for test_user.test_add_invalid_domain_to_user_raises_attribute_error" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 08m 08s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_discard_user_domain - 2017.10.16 at 13h 31m 54s.xml">
-      <configuration name="py.test for test_user.test_discard_user_domain" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 10m 14s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_discard_user_domain - 2017.10.16 at 13h 32m 16s.xml">
-      <configuration name="py.test for test_user.test_discard_user_domain" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 10m 59s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_discard_user_domain - 2017.10.16 at 13h 33m 34s.xml">
-      <configuration name="py.test for test_user.test_discard_user_domain" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 12m 59s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_discard_user_domain - 2017.10.16 at 13h 34m 14s.xml">
-      <configuration name="py.test for test_user.test_discard_user_domain" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 13m 35s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_discard_user_domain - 2017.10.16 at 13h 34m 49s.xml">
-      <configuration name="py.test for test_user.test_discard_user_domain" configurationId="tests" />
+    <history-entry file="py_test_for_test_app_test_new_user - 2017.10.17 at 15h 48m 31s.xml">
+      <configuration name="py.test for test_app.test_new_user" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_user_test_discard_user_domain - 2017.10.16 at 13h 35m 31s.xml">
-      <configuration name="py.test for test_user.test_discard_user_domain" configurationId="tests" />
+    <history-entry file="py_test_in_test_user_py - 2017.10.17 at 19h 26m 44s.xml">
+      <configuration name="py.test in test_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_user_py - 2017.10.16 at 13h 36m 21s.xml">
+    <history-entry file="py_test_in_test_user_py - 2017.10.17 at 19h 27m 25s.xml">
       <configuration name="py.test in test_user.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="22" width="1280" height="1058" extended-state="0" />
+    <frame x="840" y="22" width="840" height="1028" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301179" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46209762" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3858521" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -620,13 +655,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/infrastructure/ts_unit_of_work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="990">
+            <caret line="66" column="75" lean-forward="false" selection-start-line="66" selection-start-column="75" selection-end-line="66" selection-end-column="75" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/datastore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,9 +705,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/webapi/models/user_model.py" />
     <entry file="file://$PROJECT_DIR$/webapi/routes/user_routes.py" />
     <entry file="file://$PROJECT_DIR$/kanban/domain/services/helpers.py" />
-    <entry file="file://$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ref_user.py" />
+    <entry file="file://$PROJECT_DIR$/tests/workflow_platform/domain/model/test_user.py" />
     <entry file="file://$PROJECT_DIR$/infrastructure/unit_of_work.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -666,14 +725,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/infrastructure/test_unit_of_work.py" />
-    <entry file="file://$PROJECT_DIR$/kanban/domain/model/ref_user.py" />
+    <entry file="file://$PROJECT_DIR$/kanban/domain/model/user.py" />
     <entry file="file://$PROJECT_DIR$/infrastructure/datastore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -681,9 +738,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="91" column="50" lean-forward="false" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -695,28 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utility/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapi/models/user_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapi/routes/user_routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="23" column="84" lean-forward="false" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -728,29 +765,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/projections/ts_unit_of_work.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/datastore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="107" lean-forward="false" selection-start-line="6" selection-start-column="107" selection-end-line="6" selection-end-column="107" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/projections/ts_unit_of_work.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/76d7e90b-8c01-42bf-a2fc-5f6275d3fd5f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,6 +777,87 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/projections/workflow_platform_domain_policies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="69" lean-forward="false" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/ts_unit_of_work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/ka_uow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/unit_of_work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapi/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="86" lean-forward="false" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kanban/domain/model/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2626">
+          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/infrastructure/test_by_john_from_readme_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,6 +869,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/.hypothesis/examples/88f65f1457833032/022f36e30159ec10">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapi/routes/user_routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ts_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -777,31 +895,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/ts_unit_of_work.py">
+    <entry file="file://$PROJECT_DIR$/kanban/domain/model/ts_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#77#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/projections/workflow_platform_domain_policies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="69" lean-forward="false" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-271">
+          <caret line="60" column="37" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.venv/lib/python3.6/site-packages/eventsourcing/infrastructure/cassandra/activerecords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/datastore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/workflow_platform/domain/model/test_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -812,62 +948,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/unit_of_work.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="189" column="12" lean-forward="false" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kanban/domain/model/ts_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="60" column="37" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ref_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kanban/domain/model/ref_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="880">
-            <caret line="66" column="75" lean-forward="false" selection-start-line="66" selection-start-column="75" selection-end-line="66" selection-end-column="75" />
-            <folding>
-              <marker date="1508232643251" expanded="true" signature="593:4465" ph="..." />
-            </folding>
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/kanban_repositories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/kanban_application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-395">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
