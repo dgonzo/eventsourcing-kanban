@@ -19,7 +19,7 @@ BASEDIR = os.path.dirname(os.path.abspath(__file__))
 Base = declarative_base()
 
 
-# Define database tables.
+# Define database tables directly
 class IntegerSequencedItem(Base):
     __tablename__ = 'integer_sequenced_items'
     sequence_id = Column(UUIDType(), primary_key=True)
@@ -29,6 +29,7 @@ class IntegerSequencedItem(Base):
     __table_args__ = Index('index', 'sequence_id', 'position'),
 
 
+# eventsourcing sqlalchemy bindings
 event_datastore.setup_connection()
 event_datastore.setup_tables()
 
@@ -37,7 +38,11 @@ def init_kanban_application_w_sqlalchemy():
     init_kanban_application(
         entity_active_record_strategy=SQLAlchemyActiveRecordStrategy(
             active_record_class=IntegerSequencedItemRecord,
+            # active_record_class=IntegerSequencedItem,
+            # eventsourcing utilities
             session=event_datastore.session
+            # apistar sqlalchemy bindings
+            # session=sqlalchemy_backend.Session
         )
     )
 
@@ -54,7 +59,10 @@ routes += user_routes
 settings = {
     "DATABASE": {
         "URL": f"sqlite:///{BASEDIR}/infrastructure/event.db",
+        # eventsourcing sqlalchemy bindings
         "METADATA": event_datastore._base.metadata
+        # sqlalchemy bindings
+        # "METADATA": Base.metadata
     }
 }
 

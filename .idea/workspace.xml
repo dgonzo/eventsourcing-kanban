@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43fb0bdb-ee60-4daa-a78a-49ad43165dc1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/gonzo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/kanban_repositories.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/projections/workflow_platform_domain_policies.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/ts_unit_of_work.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/unit_of_work.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kanban/domain/model/ts_user.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/infrastructure/test_by_john_from_readme_file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/infrastructure/test_unit_of_work.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ts_user.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kanban/domain/model/ref_user.py" afterPath="$PROJECT_DIR$/kanban/domain/model/user.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_ref_user.py" afterPath="$PROJECT_DIR$/tests/workflow_platform/domain/model/test_user.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/datastore.py" afterPath="$PROJECT_DIR$/infrastructure/datastore.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py" afterPath="$PROJECT_DIR$/infrastructure/projections/kanban_domain_policies.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapi/routes/user_routes.py" afterPath="$PROJECT_DIR$/webapi/routes/user_routes.py" />
-    </list>
+    <list default="true" id="43fb0bdb-ee60-4daa-a78a-49ad43165dc1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="230">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -105,12 +87,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -176,7 +158,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="840" />
     <option name="y" value="22" />
     <option name="width" value="840" />
@@ -592,7 +574,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="22" width="840" height="1028" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -948,17 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/kanban_repositories.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -979,11 +950,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="230">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
