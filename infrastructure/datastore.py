@@ -14,10 +14,15 @@ _event_datastore = None
 
 def init_database(**kwargs):
     global _event_datastore
+    if kwargs['uri'] is None:
+        kwargs.pop('uri')
+        uri = f'sqlite:///{BASEDIR}/event.db'
+    else:
+        uri = kwargs.pop('uri')
     if _event_datastore is not None:
         raise AssertionError("init_database() has already been called.")
     _event_datastore = SQLAlchemyDatastore(
-        settings=SQLAlchemySettings(uri=DB_HOST),
+        settings=SQLAlchemySettings(uri=uri),
         tables=(IntegerSequencedItemRecord, SnapshotRecord,),
         **kwargs
     )

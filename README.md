@@ -1,5 +1,7 @@
 # Event Sourcing Kanban Example
 
+This example project is an effort to address the desired documentation objective outlined in the [eventsourcing library](https://github.com/johnbywater/eventsourcing)
+
 ## Quickstart
 
     $ python3 -m venv .venv

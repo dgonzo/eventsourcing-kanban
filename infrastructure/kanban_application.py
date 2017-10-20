@@ -1,7 +1,11 @@
 from eventsourcing.application.base import ApplicationWithPersistencePolicies
 from eventsourcing.infrastructure.snapshotting import EventSourcedSnapshotStrategy
+from eventsourcing.infrastructure.sqlalchemy.activerecords import SQLAlchemyActiveRecordStrategy, \
+    IntegerSequencedItemRecord
 from passlib.handlers.pbkdf2 import pbkdf2_sha512
 
+from infrastructure import datastore
+from infrastructure.datastore import get_database
 from infrastructure.kanban_repositories import UserRepository
 from kanban.domain.model.user import User
 from utility.parse import valid_unencrypted_password, whitelist_domain
@@ -103,3 +107,16 @@ def close_kanban_application():
     if _kanban_application is not None:
         _kanban_application.close()
     _kanban_application = None
+
+
+def init_kanban_application_w_sqlalchemy(db_host=None):
+    datastore.init_database(uri=db_host)
+    db = get_database()
+    db.setup_connection()
+    db.setup_tables()
+    init_kanban_application(
+        entity_active_record_strategy=SQLAlchemyActiveRecordStrategy(
+            active_record_class=IntegerSequencedItemRecord,
+            session=db.session
+        )
+    )
