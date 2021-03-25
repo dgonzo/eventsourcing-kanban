@@ -36,7 +36,7 @@ placebo==0.8.1
 pycrypto==2.6.1
 python-dateutil==2.6.1
 python-slugify==1.2.4
-PyYAML==3.12
+PyYAML==5.4
 raml-codec==0.1.4
 ramlfications==0.1.9
 requests==2.18.4
